@@ -1,0 +1,3 @@
+<!--components/highlightText/index.wxml-->
+<text wx:for="{{textArr}}" wx:key="index" class="{{item == keyword ? 'highlight':'' }}">{{item}}</text>
+
