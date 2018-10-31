@@ -1,0 +1,44 @@
+/* components/NavigationTitle/index.wxss */
+
+.title-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 600rpx;
+  height: 44px;
+  line-height: 32px;
+  /* margin-top: 6px; *//* padding-left: 8px; */
+  display: flex;
+  /* background-color: #f3f3f3; */
+  align-items: center;
+}
+
+.back {
+  padding: 12px 14px 11px 14px;
+}
+
+.back-icon {
+  flex-shrink: 0;
+  width: 12px;
+  height: 21px;
+  display: block;
+}
+
+.title {
+  flex-grow: 1;
+  margin-left: 28rpx;
+  font-size: 18px;
+  font-family: PingFang-SC-Bold;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.back + .title {
+  margin-left: 0rpx;
+}
+
+.hover-class {
+  background-color: #eee;
+}

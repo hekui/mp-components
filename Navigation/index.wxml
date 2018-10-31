@@ -1,0 +1,7 @@
+<!--components/Navigation/index.wxml-->
+<view class='status-bar' style='height:{{statusBarHeight}}px'></view>
+<view class='navigation-title' style='height:{{navgationHeight}}px'>
+  <slot wx:if="{{hasSlot}}"></slot>
+  <navigation-title wx:else title="{{title}}" hideBack="{{hideBack}}" backUrl="{{backUrl}}" delta="{{delta}}"></navigation-title>
+  <!-- <navigation-title title="{{title}}"></navigation-title> -->
+</view>

@@ -1,0 +1,7 @@
+/* components/Navigation/index.wxss */
+.status-bar{
+  /* background-color: #999; */
+}
+.navigation-title{
+  overflow: hidden;
+}

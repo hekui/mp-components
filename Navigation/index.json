@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "navigation-title": "/components/NavigationTitle/index"
+  }
+}

@@ -1,0 +1,7 @@
+<!--components/NavigationTitle/index.wxml-->
+<view class="title-wrapper">
+  <view bindtap="back" class="back" hover-class="hover-class" wx:if="{{!hideBack}}">
+    <image class='back-icon' src='https://mp.fangguancha.com/images/mp/back-title.png' mode="aspectFit"></image>
+  </view>
+  <text class="title">{{title}}</text>
+</view>
