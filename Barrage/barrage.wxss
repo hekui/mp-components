@@ -1,0 +1,50 @@
+/* components/Barrage/barrage.wxss */
+/* 弹幕 */
+.barrage-wrapper{
+  height: 204rpx;
+  font-size: 28rpx;
+  /* background-color: #ccc; */
+  position: relative;
+}
+.barrage-item{
+  /* position: absolute; */
+  /* left: 10%; */
+  display: inline-block;
+  white-space: nowrap;
+  background-color: #f2f3f5;
+  border-radius: 48rpx;
+  position: relative;
+  height: 48rpx;
+  line-height: 48rpx;
+  padding: 0 20rpx 0 58rpx;
+  margin-left: 20rpx;
+}
+.barrage-item .avatar{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 0rpx;
+  background: #f2f3f5 url('https://mp.fangguancha.com/images/mp/pa-default.png') no-repeat;
+  background-size: cover;
+}
+.barrage-row{
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  position: absolute;
+}
+.row1{
+  top: 10rpx;
+}
+.row2{
+  top: 78rpx;
+}
+.row3{
+  top: 146rpx;
+}
+@keyframes roll {
+  0% {left: 750rpx;}
+  100% {left: -100%;}
+}

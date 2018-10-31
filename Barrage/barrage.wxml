@@ -1,0 +1,45 @@
+<!--components/Barrage/barrage.wxml-->
+<view class="barrage-wrapper">
+  <view class="barrage-row row1" style='transform: translateX({{posLeft1}}px);'>
+    <view class="marquee" id="marquee1">
+      <view class="barrage-item" wx:for="{{barrageRow1}}" wx:key="index">
+        <image class="avatar" src="{{item.headImg}}" mode="aspectFill"></image>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+    <view class="marquee">
+      <view class="barrage-item" wx:for="{{barrageRow1}}" wx:key="index">
+        <image class="avatar" src="{{item.headImg}}" mode="aspectFill"></image>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="barrage-row row2" style='transform: translateX({{posLeft2}}px);'>
+    <view class="marquee" id="marquee2">
+      <view class="barrage-item" wx:for="{{barrageRow2}}" wx:key="index">
+        <image class="avatar" src="{{item.headImg}}" mode="aspectFill"></image>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+    <view class="marquee">
+      <view class="barrage-item" wx:for="{{barrageRow2}}" wx:key="index">
+        <image class="avatar" src="{{item.headImg}}" mode="aspectFill"></image>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="barrage-row row3" style='transform: translateX({{posLeft3}}px);'>
+    <view class="marquee" id="marquee3">
+      <view class="barrage-item" wx:for="{{barrageRow3}}" wx:key="index">
+        <image class="avatar" src="{{item.headImg}}" mode="aspectFill"></image>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+    <view class="marquee">
+      <view class="barrage-item" wx:for="{{barrageRow3}}" wx:key="index">
+        <image class="avatar" src="{{item.headImg}}" mode="aspectFill"></image>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</view>
