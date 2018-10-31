@@ -1,0 +1,9 @@
+<!--pages/estateList/index.wxml-->
+<view class='container'>
+  <view class='inputWrapper'>
+    <image class='searchImg' src='https://mp.fangguancha.com/images/common/search.png' mode="aspectFit"></image>
+    <input class='input' confirm-type="search" focus="{{focus}}" value='{{value}}' bindinput="valueChanged" bindconfirm="submitSearch" placeholder-class='inputPlaceholder' placeholder='{{placeholder}}' ></input>
+    <image wx:if='{{value.length > 0}}' class='cancelBtn' bindtap='deleteInput' src='https://mp.fangguancha.com/images/common/search-delete.png' mode="aspectFit"></image>
+  </view>
+  <button wx:if="{{!hideSubmitBtn}}" class='searchBtn' bindtap='submitSearch'>搜索</button>
+</view>
